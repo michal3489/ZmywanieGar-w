@@ -15,7 +15,7 @@ namespace Zmywara // Note: actual namespace depends on the project name.
         }
         public void AddDishSoap()
         {
-            string soap = "Podaj ile ci potrzeba kropel płynu  ";
+            string soap = "Podaj ile ci potrzeba kropel płynu ? ";
             Console.WriteLine(soap);
 
         }
@@ -36,7 +36,7 @@ namespace Zmywara // Note: actual namespace depends on the project name.
                 {
                     Console.WriteLine("Wybrałeś lewą komorę do burdnych naczyń");
                 }
-                Console.ReadLine(
+                
 
         }
         public void ScrubWithSponge()
@@ -50,7 +50,7 @@ namespace Zmywara // Note: actual namespace depends on the project name.
         public void RinseWithWater()
         {
 
-            bool              
+                bool hotWater;            
 
         }
         public void DryWithTowel()
