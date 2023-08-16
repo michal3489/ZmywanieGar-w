@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 using System.Reflection.Metadata;
+using MiNET.Blocks;
 
 namespace Zmywara // Note: actual namespace depends on the project name.
 {
@@ -49,17 +50,35 @@ namespace Zmywara // Note: actual namespace depends on the project name.
         }
         public void RinseWithWater()
         {
+                void scaldedHands(string bigPain)
+                {
+                    if(int Water == 100)
+                }
+                { 
 
+                }
                 bool hotWater;            
 
         }
         public void DryWithTowel()
         {
-            bool dryDishes;
+            bool wetDishes;
         }
         public void PutAway()
         {
-            bool broken;
+                void putzAway(bool broken)
+                {
+                    if (!broken)
+                    {
+                        Console.WriteLine("Dobrze odłożyłeś :)");
+                    }
+                    else 
+                    {
+                        Console.WriteLine("Potłukłeś gary! Jak tak można!? xD"); 
+                    }
+
+                }
+            
         }
     }
 }
