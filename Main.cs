@@ -32,5 +32,6 @@ public void Main()
     // Put the dishes away.
     Dishes.PutAway();
 
-
+    // Wash the sink after washing dishes
+    Sink.WashingSink();
 }

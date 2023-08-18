@@ -5,23 +5,25 @@ using MiNET.Blocks;
 
 namespace Zmywara // Note: actual namespace depends on the project name.
 {
-    public class Sink // class for activities in sink
+    public class Sink // class for activities with sink
     {
         public void FillWithHotWater()
         {
-            int water1 = 1;
-            int water2 = 1;
-            Console.WriteLine(water1);
-            Console.WriteLine(water2);
+            int waterHot = 1;
+            int waterCold = 1;
+            Console.WriteLine(waterHot);
+            Console.WriteLine(waterCold);
         }
         public void AddDishSoap()
         {
             string soap = "Podaj ile ci potrzeba kropel płynu ? ";
             Console.WriteLine(soap);
-
+        }
+        public void WashingSink()
+        {
+            Console.WriteLine("Na koniec zmywania wyczyść zlew");
         }
     }
-
     public class Dishes // class for activities with dishes
     {
         public void PlaceInSink()
@@ -40,6 +42,7 @@ namespace Zmywara // Note: actual namespace depends on the project name.
                 
 
         }
+
         public void ScrubWithSponge()
         {
             Console.WriteLine("Czy masz tłuste naczynia");
@@ -50,18 +53,18 @@ namespace Zmywara // Note: actual namespace depends on the project name.
         }
         public void RinseWithWater()
         {
-                void scaldedHands(string bigPain)
+                void scaldedHands(string bigBrainPain)
                 {
                     if(int Water == 100)
-                }
-                { 
-
-                }
-                bool hotWater;            
+                        {
+                            
+                        }
+                }                            
 
         }
-        public void DryWithTowel()
-        {
+        void DryWithTowel()
+        {        
+            Console.WriteLine("Wysusz dokładnie :)");
             bool wetDishes;
         }
         public void PutAway()
@@ -74,11 +77,8 @@ namespace Zmywara // Note: actual namespace depends on the project name.
                     }
                     else 
                     {
-                        Console.WriteLine("Potłukłeś gary! Jak tak można!? xD"); 
+                        Console.WriteLine("Potłukłeś gary! Jak tak można!?"); 
                     }
-
-                }
-            
-        }
+                }            
+        }        
     }
-}
