@@ -1,45 +1,55 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 using System.Reflection.Metadata;
-using MiNET.Blocks;
+
 
 namespace Zmywara // Note: actual namespace depends on the project name.
 {
     public class Sink // class for activities with sink
     {
-        public void FillWithHotWater()
+        public class FillWithHotWater()
         {
             int waterHot = 1;
             int waterCold = 1;
-            Console.WriteLine(waterHot);
-            Console.WriteLine(waterCold);
+            public static FillWithHotWater()
+            {
+                Console.WriteLine(waterHot);
+                Console.WriteLine(waterCold);
+            }
         }
-        public void AddDishSoap()
+        public class AddDishSoap()
         {
-            string soap = "Podaj ile ci potrzeba kropel płynu ? ";
-            Console.WriteLine(soap);
+            public void AddDishSoap()
+            {
+                string soap = "Podaj ile ci potrzeba kropel płynu ? ";
+                Console.WriteLine(soap);
+            }
         }
-        public void WashingSink()
+        public class WashingSink()
         {
-            Console.WriteLine("Na koniec zmywania wyczyść zlew");
+            public static WashingSink()
+            {
+                Console.WriteLine("Na koniec zmywania wyczyść zlew");
+            }
         }
     }
     public class Dishes // class for activities with dishes
     {
-        public void PlaceInSink()
+        public class PlaceInSink()
         {
+            public static PlaceInSink() { 
             Console.WriteLine("W której komorze zmywasz?");
             void WhichChamber(string chamber)
-            {
-                if (chamber == "Prawa")
                 {
-                    Console.WriteLine("Wybrałeś prawą komorę do brudnych naczyń");
+                    if (chamber == "Prawa")
+                    {
+                        Console.WriteLine("Wybrałeś prawą komorę do brudnych naczyń");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wybrałeś lewą komorę do burdnych naczyń");
+                    }
                 }
-                else
-                {
-                    Console.WriteLine("Wybrałeś lewą komorę do burdnych naczyń");
-                }
-                
 
         }
 
@@ -55,7 +65,7 @@ namespace Zmywara // Note: actual namespace depends on the project name.
         {
                 void scaldedHands(string bigBrainPain)
                 {
-                    if(int Water == 100)
+                    if(bool Sink.waterHot == 1)
                         {
                             
                         }
@@ -64,15 +74,15 @@ namespace Zmywara // Note: actual namespace depends on the project name.
         }
         void DryWithTowel()
         {        
-            Console.WriteLine("Wysusz dokładnie :)");
+            Console.WriteLine("Wysusz dokładnie:)");
             bool wetDishes;
         }
         public void PutAway()
         {
                 void putzAway(bool broken)
                 {
-                    if (!broken)
-                    {
+                    if (broken)
+                    { 
                         Console.WriteLine("Dobrze odłożyłeś :)");
                     }
                     else 
