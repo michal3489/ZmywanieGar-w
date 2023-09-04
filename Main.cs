@@ -7,7 +7,6 @@ public void Main()
     Sink.FillWithHotWater();
    
 
-
     // Add dish soap to the water.
     Sink.AddDishSoap();
 

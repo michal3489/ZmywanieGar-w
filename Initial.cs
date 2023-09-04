@@ -1,8 +1,9 @@
 ﻿using System;
+namespace Zmywara;
 
 public class Initial
 {
-	public init()
+	static Initial()
 	{
 		 
 	}
